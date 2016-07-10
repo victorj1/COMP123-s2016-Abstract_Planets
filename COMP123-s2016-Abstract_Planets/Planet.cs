@@ -5,9 +5,15 @@ using System.Text;
 
 namespace COMP123_s2016_Abstract_Planets
 {
+    /** <summary>
+    * This abstract class defines planets.
+    * </summary>
+    * 
+    * @class Planets
+    */
     public abstract class Planet
     {
-        // PRIVATE INSTANCE VARIABLES (FIELDS) +++++++++++++++++++++++++++++++++++++++++++++
+        // PRIVATE INSTANCE VARIABLES (FIELDS) ***********************************************
         private double _diameter;
         private double _mass;
         private int _moonCount;
@@ -16,7 +22,14 @@ namespace COMP123_s2016_Abstract_Planets
         private int _ringCount;
         private double _rotationPeriod;
 
-        // PUBLIC PROPERTIES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        // PUBLIC PROPERTIES *****************************************************************
+        /**
+        * <summary>
+        * This is a read only property for _diameter field
+        *  </summary>
+        *  
+        * @property {double} Diameter
+        */
         public double Diameter
         {
             get
@@ -24,7 +37,13 @@ namespace COMP123_s2016_Abstract_Planets
                 return this._diameter;
             }
         }
-
+        /**
+        * <summary>
+        * This is a read only property for _mass field
+        *  </summary>
+        *  
+        * @property {double} Mass
+        */
         public double Mass
         {
             get
@@ -32,15 +51,31 @@ namespace COMP123_s2016_Abstract_Planets
                 return this._mass;
             }
         }
-
+        /**
+        * <summary>
+        * This is a  property for _moonCount field
+        *  </summary>
+        *  
+        * @property {int} MoonCount 
+        */
         public int MoonCount
         {
             get
             {
-               return this._moonCount;
+                return this._moonCount;
+            }
+            set
+            {
+                this._moonCount = value;
             }
         }
-
+        /**
+        * <summary>
+        * This is a read only property for _name field
+        *  </summary>
+        *  
+        * @property {string} Name 
+        */
         public string Name
         {
             get
@@ -48,32 +83,49 @@ namespace COMP123_s2016_Abstract_Planets
                 return this._name;
             }
         }
-
+        /**
+        * <summary>
+        * This is a property for _orbitalPeriod field
+        *  </summary>
+        *  
+        * @property {double} OrbitalPeriod 
+        */
         public double OrbitalPeriod
         {
             get
             {
                 return this._orbitalPeriod;
             }
-
             set
             {
+                this._orbitalPeriod = value;
             }
         }
-
+        /**
+        * <summary>
+        * This is a property for _ringCount field
+        *  </summary>
+        *  
+        * @property {int} RingCount 
+        */
         public int RingCount
         {
             get
             {
                 return this._ringCount;
             }
-
             set
             {
                 this._ringCount = value;
             }
         }
-
+        /**
+        * <summary>
+        * This is a property for _rotationPeriod field
+        *  </summary>
+        *  
+        * @property {double} RotationPeriod 
+        */
         public double RotationPeriod
         {
             get
@@ -87,19 +139,38 @@ namespace COMP123_s2016_Abstract_Planets
             }
         }
 
-        public override string ToString()
-        {
-            {
-                return "_name + _diameter + _mass".ToString();
-            }
-        }
+        // CONSTRUCTORS ***********************************************************
+        /**
+        * <summary>
+        * This is the constructor that takes the name,diameter,mass parameteres and 
+        * passes to instance variables.
+        * </summary>
+        *  
+        * @constructor Planet 
+        * @param {string} name 
+        * @param {double} diameter  
+        * @param {double} mass 
+        */
 
-
-
-        // CONSTRUCTORS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        //PUBLIC METHOD **********************************************************
+        /**
+         * <summary>
+         * This is the overriding method to change the return value.
+         * </summary>
+         *  
+         * @method ToString 
+         * @return {string}   
+         */
         public Planet(string name, double diameter, double mass)
         {
-            
+            this._name = name;
+            this._diameter = diameter;
+            this._mass = mass;
+        }
+
+        public override string ToString()
+        {
+            return String.Format("Planet Name: {0} \nDiameter: {1} \nMass: {2}", this.Name, this.Diameter, this.Mass);
         }
     }
 }

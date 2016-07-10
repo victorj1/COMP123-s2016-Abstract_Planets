@@ -10,16 +10,8 @@
   <Class Name="COMP123_s2016_Abstract_Planets.GiantPlanet">
     <Position X="4.25" Y="1" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAABAAAAAQAAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAABAAAAAQAAAAABAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
       <FileName>GiantPlanet.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="COMP123_s2016_Abstract_Planets.TerresstrialPlanet">
-    <Position X="4.25" Y="3.5" Width="2.25" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAABAAAAAQAAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>TerresstrialPlanet.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
@@ -29,6 +21,14 @@
       <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
+  </Class>
+  <Class Name="COMP123_s2016_Abstract_Planets.TerresstrialPlanet">
+    <Position X="4.25" Y="4.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAQAAAAABAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>TerresstrialPlanet.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Interface Name="COMP123_s2016_Abstract_Planets.IHasMoons">
     <Position X="7.25" Y="3.25" Width="1.5" />
